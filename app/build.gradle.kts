@@ -11,13 +11,13 @@ val releaseKeyPassword: String? by rootProject
 
 android {
     compileSdk = 36
-    buildToolsVersion = "36.0.0"
+    buildToolsVersion = "36.1.0"
     defaultConfig {
         applicationId = "com.coderstory.toolkit"
         minSdk = 28
         targetSdk = 36
-        versionCode = 2038
-        versionName = "4.7"
+        versionCode = 2045
+        versionName = "4.8"
     }
 
     signingConfigs {

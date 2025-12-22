@@ -8,6 +8,7 @@
     <string name="authcreak_summary">关闭安装应用时的签名验证，可以安装被篡改的应用</string>
     <string name="digestCreak">禁用 APK 签名验证</string>
     <string name="digestCreak_summary">允许直接覆盖安装同包名不同签名的应用</string>
+    <string name="exactSigCheck_summary">禁用多个 APK 之间的唯一签名匹配，从而允许安装应用时每个分包 APK 使用不同签名。仅在确有必要时再启用此项功能！</string>
     <string name="UsePreSig">安装时始终使用已装 APP 的签名</string>
     <string name="UsePreSig_summary">不是一般的<b>危险</b>，仅在绝对需要时启用</string>
     <string name="settings">设置</string>
@@ -22,4 +23,5 @@
     <string name="shared_user_summary">允许安装与其共享用户签名不同的 app（<b>需要同时打开“禁用APK签名验证”</b>）</string>
     <string name="disable_verification_agent_title">禁用安装包验证代理</string>
     <string name="disable_verification_agent_summary">如 Play 商店的保护机制</string>
+    <string name="exactSigCheck">禁用唯一签名匹配</string>
 </resources>
