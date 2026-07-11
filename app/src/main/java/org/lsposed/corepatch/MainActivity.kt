@@ -7,19 +7,24 @@ import org.lsposed.corepatch.App.Companion.mService
 import org.lsposed.corepatch.App.Companion.reloadListener
 import org.lsposed.corepatch.adapter.MultiTypeListAdapter
 import org.lsposed.corepatch.data.SwitchData
+import org.lsposed.corepatch.ui.PreferenceLayout
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (mService != null) {
-            loadPrefs()
-        } else {
+        if (mService == null || "system" !in mService.scope) {
             reloadListener = {
                 runOnUiThread {
                     loadPrefs()
                 }
             }
+            setContentView(PreferenceLayout(this).apply {
+                titleView.setText(R.string.xposed_service_unavailable)
+                subtitleView.setText(R.string.xposed_service_unavailable_summary)
+            })
+        } else {
+            loadPrefs()
         }
     }
 

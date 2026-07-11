@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Core Patch</string>
     <string name="module_description">Android 9-16 core patch</string>
-
+    <string name="xposed_service_unavailable">Unable to connect to Xposed service</string>
+    <string name="xposed_service_unavailable_summary">Make sure the Xposed framework is running and this module is enabled.</string>
     <string name="bypass_downgrade">Bypass downgrade</string>
     <string name="bypass_verification">Bypass verification</string>
     <string name="bypass_digest">Bypass digest</string>
